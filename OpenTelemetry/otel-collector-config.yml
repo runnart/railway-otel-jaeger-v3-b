@@ -14,11 +14,11 @@ extensions:
 
 exporters:
   otlp:
-    endpoint: jaeger:16686
+    endpoint: jaeger:4317
     tls:
       insecure: true
   prometheus:
-    endpoint: "railway-prometheus:9090"
+    endpoint: "0.0.0.0:9090"
 
 service:
   pipelines:
